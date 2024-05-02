@@ -1,24 +1,42 @@
-using PufferSoftware.Scribtables;
+using System.Collections;
+using System.Collections.Generic;
 using PufferSoftware.Scripts.Core.StateMachine;
+using PufferSoftware.Scripts.Player.StateMachine;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace PufferSoftware.Scripts.Player.StateMachine
+public class PlayerBaseState : State
 {
-    public abstract class PlayerBaseState : State
+    //Player State Machineden ihtiyacı olanları alır ve Move işlemini yapar 
+
+    protected PlayerStateMachine stateMachine;
+    protected NavMeshAgent navMeshAgent;
+    protected Rigidbody rb;
+
+    protected PlayerBaseState(PlayerStateMachine stateMachine)
     {
-        
-        protected Rigidbody rigidBody;
-        protected Transform weaponTransform;
-        protected UnityEngine.Camera mainCamera;
-        protected NavMeshAgent navMeshAgent;
+        this.stateMachine = stateMachine;
+        rb = this.stateMachine.playerRigidBody;
+        navMeshAgent = this.stateMachine.navMeshAgent;
+    }
 
+    public override void OnEnter()
+    {
+    }
 
-        protected PlayerMovmentScribtable playerMovmentScribtable;
+    public override void OnUpdate(float deltaTime)
+    {
+    }
 
-        protected Vector3 input;
+    public override void OnFixedUpdate(float fixedDeltaTime)
+    {
+    }
 
-  
-   
+    public override void OnExit()
+    {
+    }
+
+    protected void Move()
+    {
     }
 }

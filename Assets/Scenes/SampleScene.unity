@@ -150,7 +150,7 @@ GameObject:
   - component: {fileID: 14969333}
   - component: {fileID: 16067381}
   - component: {fileID: 16067382}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: terrain-plane-plain (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -617,7 +617,7 @@ GameObject:
   - component: {fileID: 1003115712}
   - component: {fileID: 1004213760}
   - component: {fileID: 1006507233}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: terrain-plane-plain (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -952,7 +952,7 @@ GameObject:
   - component: {fileID: 23616966527667089}
   - component: {fileID: 65643836832617747}
   - component: {fileID: 65643836832617748}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (57)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2441,7 +2441,7 @@ GameObject:
   - component: {fileID: 118207957515945857}
   - component: {fileID: 79134856613402883}
   - component: {fileID: 143629039862959786}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (234)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3401,7 +3401,7 @@ GameObject:
   - component: {fileID: 289087740656208170}
   - component: {fileID: 340544031134848936}
   - component: {fileID: 340544031134848937}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (79)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4310,7 +4310,7 @@ GameObject:
   - component: {fileID: 533154904550538377}
   - component: {fileID: 566596719344230923}
   - component: {fileID: 566596719344230924}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (237)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4915,7 +4915,7 @@ GameObject:
   - component: {fileID: 581551817182007740}
   - component: {fileID: 623967843599912766}
   - component: {fileID: 623967843599912767}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (86)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5504,7 +5504,7 @@ GameObject:
   - component: {fileID: 719647001866509163}
   - component: {fileID: 668329466731841001}
   - component: {fileID: 719647001866509164}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6809,7 +6809,7 @@ GameObject:
   - component: {fileID: 885011842670927794}
   - component: {fileID: 933691389064273472}
   - component: {fileID: 933691389064273473}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-hole (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7636,7 +7636,7 @@ GameObject:
   - component: {fileID: 983927044425610009}
   - component: {fileID: 944996529711918491}
   - component: {fileID: 1007166068902984242}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (100)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8558,7 +8558,7 @@ GameObject:
   - component: {fileID: 1299004716747463574}
   - component: {fileID: 1350003264528958740}
   - component: {fileID: 1350003264528958741}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (78)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8686,7 +8686,7 @@ GameObject:
   - component: {fileID: 1358940988915734684}
   - component: {fileID: 1326027974467918190}
   - component: {fileID: 1366335872072462469}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-hole (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9077,7 +9077,7 @@ GameObject:
   - component: {fileID: 1398494308564027042}
   - component: {fileID: 1428382235639846944}
   - component: {fileID: 1428382235639846945}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (145)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10404,7 +10404,7 @@ GameObject:
   - component: {fileID: 1551623377479897529}
   - component: {fileID: 1527467962581536571}
   - component: {fileID: 1576162536404609520}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (74)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10909,7 +10909,7 @@ GameObject:
   - component: {fileID: 1668888123534081578}
   - component: {fileID: 1698919044700840104}
   - component: {fileID: 1698919044700840105}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11716,7 +11716,7 @@ GameObject:
   - component: {fileID: 1871844546490209367}
   - component: {fileID: 1819719832398645973}
   - component: {fileID: 1871844546490209368}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (49)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12466,7 +12466,7 @@ GameObject:
   - component: {fileID: 2021706692416839584}
   - component: {fileID: 2068377906146361634}
   - component: {fileID: 2068377906146361635}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (85)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12787,7 +12787,7 @@ GameObject:
   - component: {fileID: 2071651968422481204}
   - component: {fileID: 2019069779915592630}
   - component: {fileID: 2082952457096459619}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (95)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13131,7 +13131,7 @@ GameObject:
   - component: {fileID: 2175851045167333354}
   - component: {fileID: 2175851045166333226}
   - component: {fileID: 2175851045168587755}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: terrain-plane-plain (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14031,7 +14031,7 @@ GameObject:
   - component: {fileID: 2295318245287708528}
   - component: {fileID: 2260889412899379698}
   - component: {fileID: 2305749674602873735}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (77)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14050,7 +14050,7 @@ GameObject:
   - component: {fileID: 2277842886951784433}
   - component: {fileID: 2277842886952750385}
   - component: {fileID: 2277842886952750386}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: terrain-plane-plain (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14833,7 +14833,7 @@ GameObject:
   - component: {fileID: 2354076482432869955}
   - component: {fileID: 2310783320328566977}
   - component: {fileID: 2376917995949547030}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (230)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15199,7 +15199,7 @@ GameObject:
   - component: {fileID: 2414918224172117537}
   - component: {fileID: 2394035308484276387}
   - component: {fileID: 2440444190154286858}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (240)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15582,7 +15582,7 @@ GameObject:
   - component: {fileID: 2452605723490915412}
   - component: {fileID: 2500543224575412950}
   - component: {fileID: 2500543224575412951}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15978,7 +15978,7 @@ GameObject:
   - component: {fileID: 2654691722175587708}
   - component: {fileID: 2624909425942854654}
   - component: {fileID: 2662310016627220875}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (102)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16823,7 +16823,7 @@ GameObject:
   - component: {fileID: 2735821861916825726}
   - component: {fileID: 2687881811636979452}
   - component: {fileID: 2735821861916825727}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (90)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17728,7 +17728,7 @@ GameObject:
   - component: {fileID: 2836037695304209498}
   - component: {fileID: 2873701712075311832}
   - component: {fileID: 2873701712075311833}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (128)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17799,7 +17799,7 @@ GameObject:
   - component: {fileID: 2815649946458775725}
   - component: {fileID: 2859258542084039007}
   - component: {fileID: 2859258542084039008}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-hole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18508,7 +18508,7 @@ GameObject:
   - component: {fileID: 2947462135205645447}
   - component: {fileID: 2908670099094180357}
   - component: {fileID: 2947462135205645448}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18559,7 +18559,7 @@ GameObject:
   - component: {fileID: 2920100955686180877}
   - component: {fileID: 2899360898913388175}
   - component: {fileID: 2944219469206950182}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19089,7 +19089,7 @@ GameObject:
   - component: {fileID: 3032251645573275766}
   - component: {fileID: 3075512105511354100}
   - component: {fileID: 3075512105511354101}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (51)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20396,7 +20396,7 @@ GameObject:
   - component: {fileID: 3419030713491425932}
   - component: {fileID: 3443010062633227278}
   - component: {fileID: 3443010062633227279}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (47)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20739,7 +20739,7 @@ GameObject:
   - component: {fileID: 3478201431317408854}
   - component: {fileID: 3530783621973160660}
   - component: {fileID: 3530783621973160661}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (227)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21906,7 +21906,7 @@ GameObject:
   - component: {fileID: 3530859404236532325}
   - component: {fileID: 3583441242317026535}
   - component: {fileID: 3583441242317026536}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (94)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22372,7 +22372,7 @@ GameObject:
   - component: {fileID: 3607568358656364966}
   - component: {fileID: 3650864002968391460}
   - component: {fileID: 3650864002968391461}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24868,7 +24868,7 @@ GameObject:
   - component: {fileID: 4053012226127315020}
   - component: {fileID: 4072907849229246158}
   - component: {fileID: 4072907849229246159}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26390,7 +26390,7 @@ GameObject:
   - component: {fileID: 4325140967487894070}
   - component: {fileID: 4377267880602709172}
   - component: {fileID: 4377267880602709173}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (76)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26690,7 +26690,7 @@ GameObject:
   - component: {fileID: 4420140508624238360}
   - component: {fileID: 4462415662262479258}
   - component: {fileID: 4462415662262479259}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (99)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27101,7 +27101,7 @@ GameObject:
   - component: {fileID: 4439396164313097045}
   - component: {fileID: 4404861778422070743}
   - component: {fileID: 4452996864564812548}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (53)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27195,7 +27195,7 @@ GameObject:
   - component: {fileID: 4457180808439618011}
   - component: {fileID: 4457180808438487835}
   - component: {fileID: 4457180808439618012}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: terrain-plane-plain (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30402,7 +30402,7 @@ GameObject:
   - component: {fileID: 4938240887346317812}
   - component: {fileID: 4938240887345318708}
   - component: {fileID: 4938240887347320309}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: terrain-plane-plain (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30924,7 +30924,7 @@ GameObject:
   - component: {fileID: 5028825307673047175}
   - component: {fileID: 5004388418081222149}
   - component: {fileID: 5038623280683889778}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (238)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31372,7 +31372,7 @@ GameObject:
   - component: {fileID: 5100310016762869855}
   - component: {fileID: 5079253103074846429}
   - component: {fileID: 5107856191178013866}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (81)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32214,7 +32214,7 @@ GameObject:
   - component: {fileID: 5171405463851620150}
   - component: {fileID: 5151648378948684212}
   - component: {fileID: 5179620101427975105}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (136)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33098,7 +33098,7 @@ GameObject:
   - component: {fileID: 5315458853248817237}
   - component: {fileID: 5295842368393447127}
   - component: {fileID: 5323674217758874788}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (91)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33532,7 +33532,7 @@ GameObject:
   - component: {fileID: 5396676139997408909}
   - component: {fileID: 5358730923276300303}
   - component: {fileID: 5396676139997408910}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (89)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34134,7 +34134,7 @@ GameObject:
   - component: {fileID: 5456251240807076322}
   - component: {fileID: 5405074509730467680}
   - component: {fileID: 5471770039094503861}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34227,7 +34227,7 @@ GameObject:
   - component: {fileID: 5509724592240163877}
   - component: {fileID: 5533983217065042599}
   - component: {fileID: 5533983217065042600}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34247,7 +34247,7 @@ GameObject:
   - component: {fileID: 5509438744138725935}
   - component: {fileID: 5534823206612788397}
   - component: {fileID: 5534823206612788398}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (82)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34352,7 +34352,7 @@ GameObject:
   - component: {fileID: 5496091738034109547}
   - component: {fileID: 5496091738032979627}
   - component: {fileID: 5496091738034109548}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: terrain-plane-plain (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35060,7 +35060,7 @@ GameObject:
   - component: {fileID: 5522027140447531795}
   - component: {fileID: 5483413283352817041}
   - component: {fileID: 5548327222778690108}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (146)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37548,7 +37548,7 @@ GameObject:
   - component: {fileID: 5772631559925453198}
   - component: {fileID: 5811421330289397516}
   - component: {fileID: 5811421330289397517}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (60)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37749,7 +37749,7 @@ GameObject:
   - component: {fileID: 5832209779121102815}
   - component: {fileID: 5785712500561756509}
   - component: {fileID: 5832209779121102816}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (101)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37849,7 +37849,7 @@ GameObject:
   - component: {fileID: 5800697755107851241}
   - component: {fileID: 5781186950321677675}
   - component: {fileID: 5826962497914106562}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (134)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38349,7 +38349,7 @@ GameObject:
   - component: {fileID: 5908985780577123556}
   - component: {fileID: 5961145758785069670}
   - component: {fileID: 5961145758785069671}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (233)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38680,7 +38680,7 @@ GameObject:
   - component: {fileID: 5955238627794771393}
   - component: {fileID: 5917607605247902531}
   - component: {fileID: 5978794182537303274}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (93)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39919,7 +39919,7 @@ GameObject:
   - component: {fileID: 6125043924434468338}
   - component: {fileID: 6177346347226850160}
   - component: {fileID: 6177346347226850161}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (96)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40312,7 +40312,7 @@ GameObject:
   - component: {fileID: 6161064002561181685}
   - component: {fileID: 6141412528754579831}
   - component: {fileID: 6187329381257547486}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (135)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40567,7 +40567,7 @@ GameObject:
   - component: {fileID: 6220309452971711768}
   - component: {fileID: 6262302856774534042}
   - component: {fileID: 6262302856774534043}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40730,7 +40730,7 @@ GameObject:
   - component: {fileID: 6212758691163542845}
   - component: {fileID: 6233815475735874495}
   - component: {fileID: 6233815475735874496}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (87)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41206,7 +41206,7 @@ GameObject:
   - component: {fileID: 6275536043950213656}
   - component: {fileID: 6317987263599334554}
   - component: {fileID: 6317987263599334555}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (225)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41534,7 +41534,7 @@ GameObject:
   - component: {fileID: 6340729360631098940}
   - component: {fileID: 6288180645220430014}
   - component: {fileID: 6340729360631098941}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41606,7 +41606,7 @@ GameObject:
   - component: {fileID: 6333570537474226157}
   - component: {fileID: 6295906804053322095}
   - component: {fileID: 6333570537474226158}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (50)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42243,7 +42243,7 @@ GameObject:
   - component: {fileID: 6350338750224437219}
   - component: {fileID: 6384483917588681057}
   - component: {fileID: 6384483917588681058}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (83)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42534,7 +42534,7 @@ GameObject:
   - component: {fileID: 6443469101146041480}
   - component: {fileID: 6471985180907418122}
   - component: {fileID: 6471985180907418123}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42802,7 +42802,7 @@ GameObject:
   - component: {fileID: 6468051215660830149}
   - component: {fileID: 6447452033831703367}
   - component: {fileID: 6477885571435514164}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (235)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43342,7 +43342,7 @@ GameObject:
   - component: {fileID: 6547273029040891991}
   - component: {fileID: 6513972082864142037}
   - component: {fileID: 6555454304349580450}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (226)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43503,7 +43503,7 @@ GameObject:
   - component: {fileID: 6527082720286199811}
   - component: {fileID: 6498142443801153153}
   - component: {fileID: 6541878122291484972}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (239)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45165,6 +45165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6602183110132698995}
   - component: {fileID: 6602183110125543571}
+  - component: {fileID: 6602183110132798296}
   - component: {fileID: 6602183110132798294}
   - component: {fileID: 6602183110132798292}
   m_Layer: 0
@@ -45251,6 +45252,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6602183110132798296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6602183110132798291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73cff560c676f3a45b3ffaee6edca490, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerRigidBody: {fileID: 0}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  navMeshAgent: {fileID: 0}
 --- !u!1 &6602183110132798297
 GameObject:
   m_ObjectHideFlags: 0
@@ -46217,7 +46235,7 @@ GameObject:
   - component: {fileID: 6645605545925596443}
   - component: {fileID: 6666240257753942937}
   - component: {fileID: 6666240257753942938}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (55)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46600,7 +46618,7 @@ GameObject:
   - component: {fileID: 6670236309582594584}
   - component: {fileID: 6670236309581463768}
   - component: {fileID: 6670236309583732249}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: terrain-plane-plain (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46898,7 +46916,7 @@ GameObject:
   - component: {fileID: 6718965071160507914}
   - component: {fileID: 6738614414528782472}
   - component: {fileID: 6738614414528782473}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47533,7 +47551,7 @@ GameObject:
   - component: {fileID: 6808477593408865183}
   - component: {fileID: 6829220055494974749}
   - component: {fileID: 6829220055494974750}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (92)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47553,7 +47571,7 @@ GameObject:
   - component: {fileID: 6802154474031188714}
   - component: {fileID: 6835560767163552872}
   - component: {fileID: 6835560767163552873}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (52)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48908,7 +48926,7 @@ GameObject:
   - component: {fileID: 6966689334873023486}
   - component: {fileID: 6923288478743281020}
   - component: {fileID: 6987749670824352681}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50193,7 +50211,7 @@ GameObject:
   - component: {fileID: 7303207390629463520}
   - component: {fileID: 7341119542425148258}
   - component: {fileID: 7341119542425148259}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50632,7 +50650,7 @@ GameObject:
   - component: {fileID: 7317897960684534800}
   - component: {fileID: 7292651974552445586}
   - component: {fileID: 7339102848592200775}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (228)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50787,7 +50805,7 @@ GameObject:
   - component: {fileID: 7326917267534092771}
   - component: {fileID: 7283623888819079009}
   - component: {fileID: 7348095767061914038}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51593,7 +51611,7 @@ GameObject:
   - component: {fileID: 7529548679217844180}
   - component: {fileID: 7549305763988853078}
   - component: {fileID: 7549305763988853079}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (54)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51946,7 +51964,7 @@ GameObject:
   - component: {fileID: 7547178952914291872}
   - component: {fileID: 7495720944566342178}
   - component: {fileID: 7560181484104955127}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (126)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52575,7 +52593,7 @@ GameObject:
   - component: {fileID: 7699422992595390775}
   - component: {fileID: 7699422992594293751}
   - component: {fileID: 7699422992596225336}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: terrain-plane-plain (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52685,7 +52703,7 @@ GameObject:
   - component: {fileID: 7737561895001639262}
   - component: {fileID: 7771953694437545948}
   - component: {fileID: 7771953694437545949}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (224)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53131,7 +53149,7 @@ GameObject:
   - component: {fileID: 7801714069594217251}
   - component: {fileID: 7801714069593250275}
   - component: {fileID: 7801714069595440932}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: terrain-plane-plain (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54224,7 +54242,7 @@ GameObject:
   - component: {fileID: 7977214623768331210}
   - component: {fileID: 7977214623769297162}
   - component: {fileID: 7977214623771722731}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: terrain-plane-plain (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54849,7 +54867,7 @@ GameObject:
   - component: {fileID: 8042168831872302673}
   - component: {fileID: 8007774831282004179}
   - component: {fileID: 8055914666577757704}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (97)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55575,7 +55593,7 @@ GameObject:
   - component: {fileID: 8112680909256259822}
   - component: {fileID: 8083074525892716140}
   - component: {fileID: 8127792360460743111}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (59)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56334,7 +56352,7 @@ GameObject:
   - component: {fileID: 8151728854922845407}
   - component: {fileID: 8185876220906144349}
   - component: {fileID: 8185876220906144350}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (75)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57877,7 +57895,7 @@ GameObject:
   - component: {fileID: 8389309915101317975}
   - component: {fileID: 8418918555219727829}
   - component: {fileID: 8418918555219727830}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (80)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57949,7 +57967,7 @@ GameObject:
   - component: {fileID: 8360055340373451173}
   - component: {fileID: 8412217438129028903}
   - component: {fileID: 8412217438129028904}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (58)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58371,7 +58389,7 @@ GameObject:
   - component: {fileID: 8495875868656282645}
   - component: {fileID: 8457121488687198871}
   - component: {fileID: 8495875868656282646}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (48)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59480,7 +59498,7 @@ GameObject:
   - component: {fileID: 8584641579611026880}
   - component: {fileID: 8617663389555272514}
   - component: {fileID: 8617663389555272515}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (88)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59500,7 +59518,7 @@ GameObject:
   - component: {fileID: 8584215923968223127}
   - component: {fileID: 8618644900507253013}
   - component: {fileID: 8618644900507253014}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (98)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60651,7 +60669,7 @@ GameObject:
   - component: {fileID: 8726799723801817841}
   - component: {fileID: 8764289811444460659}
   - component: {fileID: 8764289811444460660}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60794,7 +60812,7 @@ GameObject:
   - component: {fileID: 8730840363658369823}
   - component: {fileID: 8759778578975425949}
   - component: {fileID: 8759778578975425950}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61104,7 +61122,7 @@ GameObject:
   - component: {fileID: 8769422678059517681}
   - component: {fileID: 8721764180046764147}
   - component: {fileID: 8786117348694462426}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (56)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62272,7 +62290,7 @@ GameObject:
   - component: {fileID: 9033880234197763994}
   - component: {fileID: 9071405291313043736}
   - component: {fileID: 9071405291313043737}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (236)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63178,7 +63196,7 @@ GameObject:
   - component: {fileID: 9168570471327236765}
   - component: {fileID: 9189488925856455711}
   - component: {fileID: 9189488925856455712}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dungeon-floor-stone (84)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

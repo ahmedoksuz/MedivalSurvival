@@ -5,9 +5,8 @@ namespace PufferSoftware.Scripts.Core.StateMachine
 {
     public class StateMachineBase : Actor
     {
-
         private State _currentState;
-        
+
         private void Update()
         {
             _currentState?.OnUpdate(Time.deltaTime);
@@ -17,14 +16,12 @@ namespace PufferSoftware.Scripts.Core.StateMachine
         {
             _currentState?.OnFixedUpdate(Time.fixedDeltaTime);
         }
-        
+
         public void SwitchState(State newState)
         {
             _currentState?.OnExit();
             _currentState = newState;
             _currentState.OnEnter();
         }
-
-     
     }
 }
