@@ -16,6 +16,7 @@ namespace PufferSoftware.Scripts.Player.StateMachine
         protected PlayerMovementScriptable playerMovementScriptable;
         protected PlayerAnimatorController playerAnimatorController;
         private Animator animator;
+        private float currentSpeed = 0;
 
         public PlayerBaseState(PlayerStateMachine stateMachine)
         {
@@ -23,10 +24,10 @@ namespace PufferSoftware.Scripts.Player.StateMachine
             rb = this.stateMachine.playerRigidBody;
             inputController = this.stateMachine.inputController;
             model = this.stateMachine.model;
-            navMeshAgent = this.stateMachine.navMeshAgent;
+            navMeshAgent = this.stateMachine.playerNavMeshAgent;
             playerMovementScriptable = this.stateMachine.playerMovementScriptable;
             playerAnimatorController = this.stateMachine.playerAnimatorController;
-            navMeshAgent.speed = playerMovementScriptable.speed;
+            navMeshAgent.speed = 1;
             navMeshAgent.angularSpeed = 0;
         }
 
@@ -54,27 +55,40 @@ namespace PufferSoftware.Scripts.Player.StateMachine
         {
             Vector2 inputVector = inputController.GetMovementInput();
             Vector3 moveDirection = new Vector3(inputVector.x, 0, inputVector.y).normalized;
-            Vector3 targetPosition = rb.position + moveDirection * (playerMovementScriptable.speed * deltaTime * 10);
-            if (moveDirection != Vector3.zero)
+            Vector3 targetPosition = rb.position + moveDirection * (playerMovementScriptable.speed * deltaTime);
+
+            playerAnimatorController.SetAnimation(AnimationType.Walk);
+
+            navMeshAgent.SetDestination(targetPosition);
+            if (inputVector != Vector2.zero)
             {
-                playerAnimatorController.SetAnimation(AnimationType.Walk);
-                navMeshAgent.SetDestination(targetPosition);
+                currentSpeed = Mathf.Lerp(currentSpeed, playerMovementScriptable.speed,
+                    playerMovementScriptable.smooth * deltaTime);
+
+                navMeshAgent.speed = currentSpeed;
             }
             else
             {
-                playerAnimatorController.SetAnimation(AnimationType.Idle);
+                navMeshAgent.speed = Mathf.Lerp(navMeshAgent.speed, playerMovementScriptable.speed,
+                    playerMovementScriptable.smooth * deltaTime);
+                currentSpeed = 0;
             }
         }
 
         protected void LookDirection(float deltaTime)
         {
-            if (navMeshAgent.velocity.sqrMagnitude > Mathf.Epsilon)
+            Vector2 inputVector = inputController.GetMovementInput();
+            if (inputVector != Vector2.zero)
             {
-                Vector3 velocityDirection = new Vector3(navMeshAgent.velocity.x, 0, navMeshAgent.velocity.z).normalized;
-                Quaternion targetRotation = Quaternion.LookRotation(velocityDirection);
-                if (Quaternion.Angle(model.rotation, targetRotation) > 1f)
-                    model.rotation = Quaternion.Slerp(model.rotation, targetRotation,
-                        playerMovementScriptable.turnSpeed * deltaTime);
+                Vector3 direction = new Vector3(inputVector.x, 0, inputVector.y);
+                Quaternion targetRotation = Quaternion.LookRotation(direction, Vector3.up);
+
+                float angle = Quaternion.Angle(model.rotation, targetRotation);
+                float baseTurnSpeed = playerMovementScriptable.turnSpeed;
+                float angleFactor = Mathf.Clamp(angle / 180f, 0.1f, 1f);
+                float turnSpeed = baseTurnSpeed * angleFactor;
+
+                model.rotation = Quaternion.RotateTowards(model.rotation, targetRotation, turnSpeed * deltaTime);
             }
         }
     }
