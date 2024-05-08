@@ -8,6 +8,5 @@ namespace PufferSoftware.Scribtables
         [Range(0, 100)] public float speed;
         [Range(0, 5)] public float smooth;
         [Range(0, 500)] public float turnSpeed;
-        [Range(0, 15)] public float animationTurnSpeed;
     }
 }

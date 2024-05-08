@@ -15,12 +15,12 @@ namespace PufferSoftware.Scripts.Player.StateMachine
 
         public override void OnUpdate(float deltaTime)
         {
-            Move(deltaTime);
             LookDirection(deltaTime);
         }
 
         public override void OnFixedUpdate(float fixedDeltaTime)
         {
+            Move(fixedDeltaTime);
         }
 
         public override void OnExit()

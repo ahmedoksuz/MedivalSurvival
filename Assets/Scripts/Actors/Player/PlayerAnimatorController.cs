@@ -26,6 +26,7 @@ namespace PufferSoftware.Scripts.Player
         private static readonly int MoveX = Animator.StringToHash("MoveX");
         private static readonly int MoveZ = Animator.StringToHash("MoveZ");
         private static readonly int AnimSpeed = Animator.StringToHash("AnimSpeed");
+        private Vector2 _currentDirection;
 
         private void Awake()
         {
@@ -39,15 +40,13 @@ namespace PufferSoftware.Scripts.Player
         public void SetAnimation(AnimationType _animationType)
         {
             Vector2 movementInput = inputController.GetMovementInput();
-            Vector3 movementVector = new Vector3(movementInput.x, 0, movementInput.y).normalized;
 
-            float animX = Mathf.Lerp(animator.GetFloat(MoveX), movementVector.x,
-                Time.deltaTime * playerMovementData.animationTurnSpeed);
-            float animZ = Mathf.Lerp(animator.GetFloat(MoveZ), movementVector.z,
-                Time.deltaTime * playerMovementData.animationTurnSpeed);
 
-            animator.SetFloat(MoveX, animX);
-            animator.SetFloat(MoveZ, animZ);
+            _currentDirection.x = Mathf.Lerp(_currentDirection.x, movementInput.x, 15f * Time.deltaTime);
+            _currentDirection.y = Mathf.Lerp(_currentDirection.y, movementInput.y, 15f * Time.deltaTime);
+
+            animator.SetFloat(MoveX, _currentDirection.x);
+            animator.SetFloat(MoveZ, _currentDirection.y);
 
             float speedRatio = playerNavMesh.speed / playerMovementData.speed;
             animator.SetFloat(AnimSpeed, speedRatio);
