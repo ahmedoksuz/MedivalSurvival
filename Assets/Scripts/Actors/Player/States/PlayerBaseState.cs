@@ -39,11 +39,11 @@ namespace PufferSoftware.Scripts.Player.StateMachine
         public override void OnUpdate(float deltaTime)
         {
             LookDirection(deltaTime);
+            Move(deltaTime);
         }
 
         public override void OnFixedUpdate(float fixedDeltaTime)
         {
-            Move(fixedDeltaTime);
         }
 
         public override void OnExit()
@@ -59,7 +59,6 @@ namespace PufferSoftware.Scripts.Player.StateMachine
 
             playerAnimatorController.SetAnimation(AnimationType.Walk);
 
-            navMeshAgent.SetDestination(targetPosition);
             if (inputVector != Vector2.zero)
             {
                 currentSpeed = Mathf.Lerp(currentSpeed, playerMovementScriptable.speed,
@@ -73,6 +72,8 @@ namespace PufferSoftware.Scripts.Player.StateMachine
                     playerMovementScriptable.smooth * deltaTime);
                 currentSpeed = 0;
             }
+
+            navMeshAgent.SetDestination(targetPosition);
         }
 
         protected void LookDirection(float deltaTime)
@@ -84,7 +85,7 @@ namespace PufferSoftware.Scripts.Player.StateMachine
                 Quaternion targetRotation = Quaternion.LookRotation(direction, Vector3.up);
 
                 float angle = Quaternion.Angle(model.rotation, targetRotation);
-                float baseTurnSpeed = playerMovementScriptable.turnSpeed;
+                float baseTurnSpeed = playerMovementScriptable.turnSpeed * 10;
                 float angleFactor = Mathf.Clamp(angle / 180f, 0.1f, 1f);
                 float turnSpeed = baseTurnSpeed * angleFactor;
 

@@ -42,8 +42,8 @@ namespace PufferSoftware.Scripts.Player
             Vector2 movementInput = inputController.GetMovementInput();
 
 
-            _currentDirection.x = Mathf.Lerp(_currentDirection.x, movementInput.x, 15f * Time.deltaTime);
-            _currentDirection.y = Mathf.Lerp(_currentDirection.y, movementInput.y, 15f * Time.deltaTime);
+            _currentDirection.x = Mathf.Lerp(_currentDirection.x, movementInput.x, 30f * Time.deltaTime);
+            _currentDirection.y = Mathf.Lerp(_currentDirection.y, movementInput.y, 30f * Time.deltaTime);
 
             animator.SetFloat(MoveX, _currentDirection.x);
             animator.SetFloat(MoveZ, _currentDirection.y);
