@@ -27,7 +27,7 @@ namespace PufferSoftware.Scripts.Player.StateMachine
             navMeshAgent = this.stateMachine.playerNavMeshAgent;
             playerMovementScriptable = this.stateMachine.playerMovementScriptable;
             playerAnimatorController = this.stateMachine.playerAnimatorController;
-            navMeshAgent.speed = 1;
+            navMeshAgent.speed = playerMovementScriptable.speed;
             navMeshAgent.angularSpeed = 0;
         }
 
@@ -39,11 +39,11 @@ namespace PufferSoftware.Scripts.Player.StateMachine
         public override void OnUpdate(float deltaTime)
         {
             LookDirection(deltaTime);
-            Move(deltaTime);
         }
 
         public override void OnFixedUpdate(float fixedDeltaTime)
         {
+            Move(fixedDeltaTime);
         }
 
         public override void OnExit()
@@ -59,19 +59,19 @@ namespace PufferSoftware.Scripts.Player.StateMachine
 
             playerAnimatorController.SetAnimation(AnimationType.Walk);
 
-            if (inputVector != Vector2.zero)
-            {
-                currentSpeed = Mathf.Lerp(currentSpeed, playerMovementScriptable.speed,
-                    playerMovementScriptable.smooth * deltaTime);
+            /*  if (inputVector != Vector2.zero)
+               {
+                   currentSpeed = Mathf.Lerp(currentSpeed, playerMovementScriptable.speed,
+                       playerMovementScriptable.smooth * deltaTime);
 
-                navMeshAgent.speed = currentSpeed;
-            }
-            else
-            {
-                navMeshAgent.speed = Mathf.Lerp(navMeshAgent.speed, playerMovementScriptable.speed,
-                    playerMovementScriptable.smooth * deltaTime);
-                currentSpeed = 0;
-            }
+                   navMeshAgent.speed = currentSpeed;
+               }
+               else
+               {
+                   navMeshAgent.speed = Mathf.Lerp(navMeshAgent.speed, playerMovementScriptable.speed,
+                       playerMovementScriptable.smooth * deltaTime);
+                   currentSpeed = 0;
+               }*/
 
             navMeshAgent.SetDestination(targetPosition);
         }

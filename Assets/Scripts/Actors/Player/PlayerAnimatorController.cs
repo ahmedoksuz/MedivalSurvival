@@ -48,8 +48,8 @@ namespace PufferSoftware.Scripts.Player
             animator.SetFloat(MoveX, _currentDirection.x);
             animator.SetFloat(MoveZ, _currentDirection.y);
 
-            float speedRatio = playerNavMesh.speed / playerMovementData.speed;
-            animator.SetFloat(AnimSpeed, speedRatio);
+            //float speedRatio = playerNavMesh.speed / playerMovementData.speed;
+            //animator.SetFloat(AnimSpeed, speedRatio);
 
             if (_animationType != animationType)
             {
