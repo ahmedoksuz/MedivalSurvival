@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f0d48ac760b2cc44bd0218b50a92712, type: 3}
   m_Name: EnemyConfig
   m_EditorClassIdentifier: 
-  patrolSpeed: 2
-  chaseSpeed: 3.5
-  detectionRange: 5
-  attackRange: 1.5
+  patrolSpeed: 5
+  rotationSpeed: 5
+  detectionRange: 7

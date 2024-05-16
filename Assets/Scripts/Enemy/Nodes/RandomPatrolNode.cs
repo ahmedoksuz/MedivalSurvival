@@ -10,7 +10,8 @@ namespace PufferSoftware.Scripts.Core.BehaviorTree.Enemy
     {
         private NavMeshAgent _agent;
         private EnemyConfig _config;
-        private Vector3 _nextPosition;
+        private EnemyAttackConfig EnemyAttackConfig;
+        private Vector3 _nextPosition = Vector3.zero;
 
         public RandomPatrolNode(NavMeshAgent agent, EnemyConfig config)
         {
@@ -26,6 +27,7 @@ namespace PufferSoftware.Scripts.Core.BehaviorTree.Enemy
                 _agent.speed = _config.patrolSpeed;
                 _agent.SetDestination(_nextPosition);
             }
+
 
             state = NodeState.RUNNING;
             return state;

@@ -10,6 +10,7 @@ namespace PufferSoftware.Scripts.Core.BehaviorTree.Enemy
     {
         public Transform playerTransform;
         public EnemyConfig config;
+        public EnemyAttackConfig enemyAttackConfig;
         private NavMeshAgent _agent;
 
         protected void Awake()
@@ -22,8 +23,8 @@ namespace PufferSoftware.Scripts.Core.BehaviorTree.Enemy
         {
             Node randomPatrol = new RandomPatrolNode(_agent, config);
             Node playerDetected = new PlayerDetectedNode(transform, playerTransform, config);
-            Node chasePlayer = new ChasePlayerNode(_agent, playerTransform, config);
-            Node attackPlayer = new AttackPlayerNode(transform, playerTransform, config);
+            Node chasePlayer = new ChasePlayerNode(config, transform, playerTransform, _agent);
+            Node attackPlayer = new AttackPlayerNode(config, enemyAttackConfig, transform, playerTransform);
 
             Sequence chaseSequence = new Sequence(new List<Node> { playerDetected, chasePlayer });
             Sequence attackSequence = new Sequence(new List<Node> { playerDetected, attackPlayer });

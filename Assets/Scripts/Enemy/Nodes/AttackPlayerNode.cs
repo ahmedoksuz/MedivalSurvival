@@ -6,27 +6,46 @@ namespace PufferSoftware.Scripts.Core.BehaviorTree.Enemy
     public class AttackPlayerNode : Node
     {
         private Transform _transform;
-        private Transform _playerTransform;
-        private EnemyConfig _config;
+        private Transform _player;
+        private float _lastAttackTime = 0f;
+        private EnemyAttackConfig _enemyAttackConfig;
+        private EnemyConfig _enemyConfig;
 
-        public AttackPlayerNode(Transform transform, Transform playerTransform, EnemyConfig config)
+        public AttackPlayerNode(EnemyConfig enemyConfig, EnemyAttackConfig enemyAttackConfig, Transform transform,
+            Transform player)
         {
             _transform = transform;
-            _playerTransform = playerTransform;
-            _config = config;
+            _player = player;
+            _enemyAttackConfig = enemyAttackConfig;
+            _enemyConfig = enemyConfig;
         }
 
         public override NodeState Evaluate()
         {
-            if (Vector3.Distance(_transform.position, _playerTransform.position) <= _config.attackRange)
+            if (_player == null)
             {
-                Debug.Log("Player takes damage!");
-                state = NodeState.SUCCESS;
-                return state;
+                return NodeState.FAILURE;
             }
 
-            state = NodeState.FAILURE;
-            return state;
+            float distance = Vector3.Distance(_transform.position, _player.position);
+            if (distance <= _enemyAttackConfig.attackRange)
+            {
+                if (Time.time - _lastAttackTime >= _enemyAttackConfig.attackCooldown)
+                {
+                    _lastAttackTime = Time.time;
+                    Debug.Log("Player Took " + _enemyAttackConfig.attackDamage + " Damage!");
+                }
+
+                Vector3 direction = (_player.position - _transform.position).normalized;
+                Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+                _transform.rotation =
+                    Quaternion.Slerp(_transform.rotation, lookRotation,
+                        Time.deltaTime * _enemyConfig.rotationSpeed);
+
+                return NodeState.RUNNING;
+            }
+
+            return NodeState.FAILURE;
         }
     }
 }
