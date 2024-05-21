@@ -2,14 +2,23 @@
     "name": "PlayerBaseImputs",
     "maps": [
         {
-            "name": "Move",
+            "name": "Player",
             "id": "47a462ed-7453-4083-b34c-49efac21853b",
             "actions": [
                 {
-                    "name": "MovmentAction",
+                    "name": "MovementAction",
                     "type": "Value",
                     "id": "40e85989-cd7d-44cb-b0f8-3865f516daae",
                     "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "AimAction",
+                    "type": "Button",
+                    "id": "4511f8bf-c564-46f9-b648-718fed0d63bc",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -23,7 +32,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "MovmentAction",
+                    "action": "MovementAction",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -34,7 +43,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "MovmentAction",
+                    "action": "MovementAction",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -45,7 +54,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "MovmentAction",
+                    "action": "MovementAction",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -56,7 +65,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "MovmentAction",
+                    "action": "MovementAction",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -67,9 +76,20 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "MovmentAction",
+                    "action": "MovementAction",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "c6625676-2297-44ee-9e73-04c37bbe3582",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AimAction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

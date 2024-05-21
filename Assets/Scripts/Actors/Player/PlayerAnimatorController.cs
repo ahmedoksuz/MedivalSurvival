@@ -20,8 +20,8 @@ namespace PufferSoftware.Scripts.Player
         private PlayerMovementScriptable playerMovementData;
 
         private static readonly int Walk = Animator.StringToHash("Walk");
-        private static readonly int BaseAtack = Animator.StringToHash("BaseAtack");
-        private static readonly int SpecialAtack = Animator.StringToHash("SpecialAtack");
+        private static readonly int Aim = Animator.StringToHash("Aim");
+        private static readonly int ShootGun = Animator.StringToHash("ShootGun");
         private static readonly int Die = Animator.StringToHash("Die");
         private static readonly int MoveX = Animator.StringToHash("MoveX");
         private static readonly int MoveZ = Animator.StringToHash("MoveZ");
@@ -39,7 +39,7 @@ namespace PufferSoftware.Scripts.Player
 
         public void SetAnimation(AnimationType _animationType)
         {
-            Vector2 movementInput = inputController.GetMovementInput();
+            Vector2 movementInput = inputController.moveVector;
 
 
             _currentDirection.x = Mathf.Lerp(_currentDirection.x, movementInput.x, 30f * Time.deltaTime);
@@ -55,8 +55,8 @@ namespace PufferSoftware.Scripts.Player
             {
                 animationType = _animationType;
                 animator.ResetTrigger(Walk);
-                animator.ResetTrigger(BaseAtack);
-                animator.ResetTrigger(SpecialAtack);
+                animator.ResetTrigger(ShootGun);
+                animator.ResetTrigger(Aim);
                 animator.ResetTrigger(Die);
 
                 switch (animationType)
@@ -64,11 +64,11 @@ namespace PufferSoftware.Scripts.Player
                     case AnimationType.Walk:
                         animator.SetTrigger(Walk);
                         break;
-                    case AnimationType.BaseAtack:
-                        animator.SetTrigger(BaseAtack);
+                    case AnimationType.Aim:
+                        animator.SetTrigger(Aim);
                         break;
-                    case AnimationType.SpecialAtack:
-                        animator.SetTrigger(SpecialAtack);
+                    case AnimationType.ShotGunShoot:
+                        animator.SetTrigger(ShootGun);
                         break;
                     case AnimationType.Die:
                         animator.SetTrigger(Die);

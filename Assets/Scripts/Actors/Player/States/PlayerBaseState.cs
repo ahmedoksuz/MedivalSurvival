@@ -53,32 +53,19 @@ namespace PufferSoftware.Scripts.Player.StateMachine
 
         protected void Move(float deltaTime)
         {
-            Vector2 inputVector = inputController.GetMovementInput();
+            Vector2 inputVector = inputController.moveVector;
             Vector3 moveDirection = new Vector3(inputVector.x, 0, inputVector.y).normalized;
             Vector3 targetPosition = rb.position + moveDirection * (playerMovementScriptable.speed * deltaTime);
 
             playerAnimatorController.SetAnimation(AnimationType.Walk);
 
-            /*  if (inputVector != Vector2.zero)
-               {
-                   currentSpeed = Mathf.Lerp(currentSpeed, playerMovementScriptable.speed,
-                       playerMovementScriptable.smooth * deltaTime);
-
-                   navMeshAgent.speed = currentSpeed;
-               }
-               else
-               {
-                   navMeshAgent.speed = Mathf.Lerp(navMeshAgent.speed, playerMovementScriptable.speed,
-                       playerMovementScriptable.smooth * deltaTime);
-                   currentSpeed = 0;
-               }*/
 
             navMeshAgent.SetDestination(targetPosition);
         }
 
         protected void LookDirection(float deltaTime)
         {
-            Vector2 inputVector = inputController.GetMovementInput();
+            Vector2 inputVector = inputController.moveVector;
             if (inputVector != Vector2.zero)
             {
                 Vector3 direction = new Vector3(inputVector.x, 0, inputVector.y);

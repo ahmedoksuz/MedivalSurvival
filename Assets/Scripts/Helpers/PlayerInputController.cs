@@ -1,4 +1,5 @@
 using PufferSoftware.EventSystem;
+using PufferSoftware.Scripts.EventSystem;
 using UnityEngine.InputSystem;
 using UnityEngine;
 
@@ -7,24 +8,47 @@ namespace PufferSoftware.Scripts.Player
     public class PlayerInputController : Actor
     {
         [SerializeField] private InputActionAsset playerBaseInputs;
-        private InputAction moveAction;
+        private PlayerBaseImputs _playerInputActions;
+        public Vector2 moveVector;
+
+        protected void Awake()
+        {
+            _playerInputActions = new PlayerBaseImputs();
+            _playerInputActions.Player.MovementAction.performed += Move;
+            _playerInputActions.Player.AimAction.performed += ShotgunPerformed;
+            _playerInputActions.Player.MovementAction.canceled += Move;
+        }
 
         protected override void OnEnable()
         {
             base.OnEnable();
-            moveAction = playerBaseInputs.FindAction("MovmentAction");
-            moveAction.Enable();
+
+            _playerInputActions.Enable();
         }
 
         protected override void OnDisable()
         {
             base.OnDisable();
-            moveAction.Disable();
+
+
+            _playerInputActions.Disable();
         }
 
-        public Vector2 GetMovementInput()
+        private void Move(InputAction.CallbackContext context)
         {
-            return moveAction.ReadValue<Vector2>();
+            moveVector = context.phase switch
+            {
+                InputActionPhase.Performed => context.ReadValue<Vector2>(),
+                InputActionPhase.Canceled => Vector2.zero, _ => moveVector
+            };
+        }
+
+        private void ShotgunPerformed(InputAction.CallbackContext context)
+        {
+            if (context.performed)
+            {
+                Push(CustomEvents.EnableShotgun);
+            }
         }
     }
 }

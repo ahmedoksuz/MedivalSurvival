@@ -964,6 +964,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShotGunIndicator
       objectReference: {fileID: 0}
+    - target: {fileID: 1343705414614703031, guid: dc8e90374069c0744a91c573ab79ea2b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8592113320882535010, guid: dc8e90374069c0744a91c573ab79ea2b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1194,6 +1198,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.00134, y: 3.0026963, z: 0.32655352}
   m_Center: {x: -0.0006606579, y: 1.4986519, z: 0.1650162}
+--- !u!1 &1858587945 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1343705414614703031, guid: dc8e90374069c0744a91c573ab79ea2b, type: 3}
+  m_PrefabInstance: {fileID: 1229462679}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1864172026
 GameObject:
   m_ObjectHideFlags: 0
@@ -46305,6 +46314,7 @@ MonoBehaviour:
   inputController: {fileID: 0}
   animator: {fileID: 0}
   playerAnimatorController: {fileID: 0}
+  aimObject: {fileID: 1858587945}
 --- !u!114 &6602183110132798298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46318,6 +46328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerBaseInputs: {fileID: -944628639613478452, guid: ec6119af5f6bcc843a646812605dadf8, type: 3}
+  moveVector: {x: 0, y: 0}
 --- !u!114 &6602183110132798302
 MonoBehaviour:
   m_ObjectHideFlags: 0
