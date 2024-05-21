@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using PufferSoftware.Scripts.EventSystem;
 using PufferSoftware.Scripts.GlobalVariables;
 using UnityEngine;
 
@@ -30,6 +29,10 @@ namespace PufferSoftware.Scripts.Player.StateMachine
         public override void OnUpdate(float deltaTime)
         {
             UpdateAimDirection();
+            if (Input.GetMouseButtonDown(0))
+            {
+                Shoot();
+            }
         }
 
         public override void OnFixedUpdate(float fixedDeltaTime)
@@ -48,9 +51,14 @@ namespace PufferSoftware.Scripts.Player.StateMachine
             if (Physics.Raycast(ray, out RaycastHit hit))
             {
                 Vector3 targetPosition = hit.point;
-                targetPosition.y = stateMachine.transform.position.y; // Keep the y position same as the player
+                targetPosition.y = stateMachine.transform.position.y;
                 stateMachine.transform.LookAt(targetPosition);
             }
+        }
+
+        private void Shoot()
+        {
+            Debug.Log("Hedefe ateş ediliyor");
         }
     }
 }

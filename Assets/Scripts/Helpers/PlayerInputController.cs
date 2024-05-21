@@ -17,6 +17,7 @@ namespace PufferSoftware.Scripts.Player
             _playerInputActions.Player.MovementAction.performed += Move;
             _playerInputActions.Player.AimAction.performed += ShotgunPerformed;
             _playerInputActions.Player.MovementAction.canceled += Move;
+            _playerInputActions.Player.Click.canceled += DisableShootGun;
         }
 
         protected override void OnEnable()
@@ -48,6 +49,14 @@ namespace PufferSoftware.Scripts.Player
             if (context.performed)
             {
                 Push(CustomEvents.EnableShotgun);
+            }
+        }
+
+        private void DisableShootGun(InputAction.CallbackContext context)
+        {
+            if (context.performed)
+            {
+                Push(CustomEvents.DisableShotGun);
             }
         }
     }

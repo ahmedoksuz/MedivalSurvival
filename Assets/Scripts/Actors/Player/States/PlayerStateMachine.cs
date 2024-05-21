@@ -47,15 +47,16 @@ namespace PufferSoftware.Scripts.Player.StateMachine
             }
         }
 
+        private void EnableShootGun(object[] arguments)
+        {
+            aimObject.SetActive(true);
+            SwitchState(new PlayerShotGun(this));
+        }
+
         private void DisableShotGun(object[] arguments)
         {
             aimObject.SetActive(false);
             SwitchState(new PlayerMoveState(this));
-        }
-
-        private void EnableShootGun(object[] arguments)
-        {
-            SwitchState(new PlayerShotGun(this));
         }
 
         private void OnGameStart(object[] arguments)

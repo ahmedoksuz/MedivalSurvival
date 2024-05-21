@@ -44,6 +44,15 @@ public partial class @PlayerBaseImputs: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Click"",
+                    ""type"": ""Button"",
+                    ""id"": ""ad69bef7-4b24-4c12-9d6a-fb3663ccf4ba"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -112,6 +121,17 @@ public partial class @PlayerBaseImputs: IInputActionCollection2, IDisposable
                     ""action"": ""AimAction"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""44da10f6-c4f9-4dc9-aec0-3fd36f2aa721"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Click"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -122,6 +142,7 @@ public partial class @PlayerBaseImputs: IInputActionCollection2, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_MovementAction = m_Player.FindAction("MovementAction", throwIfNotFound: true);
         m_Player_AimAction = m_Player.FindAction("AimAction", throwIfNotFound: true);
+        m_Player_Click = m_Player.FindAction("Click", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -185,12 +206,14 @@ public partial class @PlayerBaseImputs: IInputActionCollection2, IDisposable
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
     private readonly InputAction m_Player_MovementAction;
     private readonly InputAction m_Player_AimAction;
+    private readonly InputAction m_Player_Click;
     public struct PlayerActions
     {
         private @PlayerBaseImputs m_Wrapper;
         public PlayerActions(@PlayerBaseImputs wrapper) { m_Wrapper = wrapper; }
         public InputAction @MovementAction => m_Wrapper.m_Player_MovementAction;
         public InputAction @AimAction => m_Wrapper.m_Player_AimAction;
+        public InputAction @Click => m_Wrapper.m_Player_Click;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -206,6 +229,9 @@ public partial class @PlayerBaseImputs: IInputActionCollection2, IDisposable
             @AimAction.started += instance.OnAimAction;
             @AimAction.performed += instance.OnAimAction;
             @AimAction.canceled += instance.OnAimAction;
+            @Click.started += instance.OnClick;
+            @Click.performed += instance.OnClick;
+            @Click.canceled += instance.OnClick;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -216,6 +242,9 @@ public partial class @PlayerBaseImputs: IInputActionCollection2, IDisposable
             @AimAction.started -= instance.OnAimAction;
             @AimAction.performed -= instance.OnAimAction;
             @AimAction.canceled -= instance.OnAimAction;
+            @Click.started -= instance.OnClick;
+            @Click.performed -= instance.OnClick;
+            @Click.canceled -= instance.OnClick;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -237,5 +266,6 @@ public partial class @PlayerBaseImputs: IInputActionCollection2, IDisposable
     {
         void OnMovementAction(InputAction.CallbackContext context);
         void OnAimAction(InputAction.CallbackContext context);
+        void OnClick(InputAction.CallbackContext context);
     }
 }

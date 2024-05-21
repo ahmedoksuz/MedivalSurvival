@@ -79,5 +79,6 @@ namespace PufferSoftware.Scripts.Player.StateMachine
                 model.rotation = Quaternion.RotateTowards(model.rotation, targetRotation, turnSpeed * deltaTime);
             }
         }
+        
     }
 }
