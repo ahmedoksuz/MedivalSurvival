@@ -55,6 +55,7 @@ namespace PufferSoftware.Scripts.Player.StateMachine
 
         private void DisableShotGun(object[] arguments)
         {
+            Debug.Log("Test");
             aimObject.SetActive(false);
             SwitchState(new PlayerMoveState(this));
         }

@@ -4,6 +4,7 @@ namespace PufferSoftware.Scripts.EventSystem
     {
         public const string OnGameStart = nameof(OnGameStart);
         public static string EnableShotgun = nameof(EnableShotgun);
-        public static string DisableShotGun = nameof(EnableShotgun);
+
+        public static string DisableShotGun = nameof(DisableShotGun);
     }
 }

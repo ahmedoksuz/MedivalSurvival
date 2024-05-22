@@ -37,6 +37,7 @@ namespace PufferSoftware.Scripts.Player.StateMachine
 
         public override void OnFixedUpdate(float fixedDeltaTime)
         {
+            Move(fixedDeltaTime);
         }
 
         public override void OnExit()
